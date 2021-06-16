@@ -13,5 +13,5 @@
 Smaadhaan Server is based on Express with NodeJS  deployed on **IBM Cloud Foundry**  service.
 
 <p align="center">
-<a href="https://smaadhaan-server-interested-eland-ls.eu-gb.mybluemix.net/" >```Smaadhaan API```</a>
+<a href="https://smaadhaan-server-interested-eland-ls.eu-gb.mybluemix.net/" >Smaadhaan API</a>
 </p>
