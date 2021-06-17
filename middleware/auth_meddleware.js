@@ -20,7 +20,7 @@ exports.requireAuth = (req, res, next) => {
       }
     });
   } else {
-      res.status(400).send('INVALID TOKEN');
-      next();
+    res.status(400).send('INVALID TOKEN');
+    next();
   }
 };

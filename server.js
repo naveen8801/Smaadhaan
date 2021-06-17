@@ -10,6 +10,7 @@ const cookieParser = require('cookie-parser');
 dotenv.config({ path: 'config/config.env' });
 
 const app = express();
+app.use(cors({ credentials: true }));
 app.use(morgan('tiny'));
 app.use(express.json({ extended: false }));
 app.use(cookieParser());
@@ -17,7 +18,7 @@ app.use('/api', routes);
 
 const PORT = process.env.PORT || 5000;
 
-app.get('/', (req, res) => {
+app.get('/', (req, res) => {  
   res.send("<h1>Welcome To Smaadhaan Server API</h1>");
 });
 

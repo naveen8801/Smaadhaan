@@ -5,6 +5,7 @@ const moment = require('moment');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { suppressDeprecationWarnings } = require('moment');
+const MessagingResponse = require('twilio').twiml.MessagingResponse;
 
 const maxage = 3 * 24 * 60 * 60;
 const createwebToken = (id) => {
@@ -15,7 +16,6 @@ const createwebToken = (id) => {
 
 exports.login = async (req, res) => {
   const { username, password } = req.body;
-  console.log(username, password);
   try {
     const user = await OrgRegistertModel.login(username, password);
     const token = createwebToken(user._id);
@@ -35,7 +35,6 @@ exports.login = async (req, res) => {
 
 exports.register = async (req, res) => {
   let { org_name, username, password, location } = req.body;
-  console.log(password);
   const list = [];
   try {
     const salt = await bcrypt.genSalt();
@@ -75,7 +74,6 @@ exports.postrequest = async (req, res) => {
   const { name, problem, long, lat, phone_number } = req.body;
   const date = moment(Date.now()).format('MM/DD/YYYY');
   const accepted = false;
-  console.log(name);
   try {
     const req = await RequestModel.create({
       name,
@@ -94,14 +92,27 @@ exports.postrequest = async (req, res) => {
 };
 
 exports.incomingsms = (req, res) => {
-  res.send('incoming-sms');
+  const msgFrom = req.body.From;
+  const msgBody = req.body.Body;
+
+  const twiml = new MessagingResponse();
+
+  twiml.message(
+    'Thanks for using Smaadhaan, your request has been saved. Org will reach to you soon. Thanks :-)'
+  );
+
+  res.writeHead(200, { 'Content-Type': 'text/xml' });
+  res.end(twiml.toString());
+  res.status(200).send('MESSAGE SENT AND RECIEVED');
 };
 
 exports.outgoingsms = async (req, res) => {
   const { phone_number } = req.body;
   const { orgid } = req;
+  console.log('ID', orgid);
   try {
     const org = await OrgRegistertModel.findById(orgid);
+
     var options = {
       authorization: process.env.API_KEY_SMS,
       message: `Your request have been successully accepted by organisation "${org.org_name}". Organisation will reach to you soon. Thanks for using Smaadhaan :-)`,
@@ -118,7 +129,6 @@ exports.outgoingsms = async (req, res) => {
 exports.getRequests = async (req, res) => {
   try {
     const allrequests = await RequestModel.find();
-
     res.status(200).json(allrequests);
   } catch (err) {
     console.log(err);
