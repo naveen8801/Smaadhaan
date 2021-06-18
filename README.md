@@ -1,4 +1,4 @@
-# Smaadhaan Server
+# Smaadhaan
 
 <p align="center">
   <a href="https://github.com/naveen8801/Smaadhaan">
