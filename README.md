@@ -33,7 +33,7 @@
 ![PIPELINE](https://github.com/naveen8801/Smaadhaan/blob/main/utils/New_Smaadhaan_diagram_jpeg.jpg)
 
 ### PROJECT DEMO VIDEO
-[![Watch the video]()
+[![Watch the video](https://img.youtube.com/vi/sG_mWi4OTmo/hqdefault.jpg)](https://youtu.be/sG_mWi4OTmo)
 
 ## SUBSECTIONS OF THE APPLICATION
 
