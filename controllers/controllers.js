@@ -92,18 +92,14 @@ exports.postrequest = async (req, res) => {
 };
 
 exports.incomingsms = (req, res) => {
-  const msgFrom = req.body.From;
-  const msgBody = req.body.Body;
-
+  const m = req.body;
+  console.log(m);
   const twiml = new MessagingResponse();
-
   twiml.message(
-    'Thanks for using Smaadhaan, your request has been saved. Org will reach to you soon. Thanks :-)'
+    `Thanks for using Smaadhaan, your request has been recieved successfullly`
   );
-
   res.writeHead(200, { 'Content-Type': 'text/xml' });
   res.end(twiml.toString());
-  res.status(200).send('MESSAGE SENT AND RECIEVED');
 };
 
 exports.outgoingsms = async (req, res) => {
@@ -220,4 +216,9 @@ exports.allData = async (req, res) => {
     console.log(err);
     res.status(400).send('ERROR');
   }
+};
+
+exports.logout = (req, res) => {
+  res.cookie('jwt', '', { maxAge: 1 });
+  res.status(200).send('done');
 };

@@ -9,6 +9,7 @@ const {
   getRequests,
   acceptRequest,
   allData,
+  logout,
 } = require('./../controllers/controllers');
 const { requireAuth } = require('./../middleware/auth_meddleware');
 
@@ -23,5 +24,5 @@ router.post('/accept-request', requireAuth, acceptRequest);
 router.get('/profile', requireAuth, profile);
 router.get('/all-request', getRequests);
 router.get('/all-data', allData);
-
+router.get('/logout', requireAuth, logout);
 module.exports = router;
