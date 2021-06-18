@@ -30,7 +30,7 @@
 - **IBM Watson Studio** - IBM watson studio is used to create Smaadhaan chatbot.
 
 ### PROJECT PIPELINE
-![PIPELINE](https://raw.githubusercontent.com/naveen8801/Smaadhaan/main/utils/New_Smaadhaan_diagram_jpeg.jpg)
+![PIPELINE](https://github.com/naveen8801/Smaadhaan/blob/main/utils/New_Smaadhaan_diagram.png)
 
 ### PROJECT DEMO VIDEO
 [![Watch the video]()
