@@ -37,6 +37,6 @@
 
 ## SUBSECTIONS OF THE APPLICATION
 
-- Head Over to [Smaadhaan Server Section](server/)
-- Head Over to [Smaadhaan Android App Section](Smaadhann_app/)
-- Head Over to [Smaadhaan Web Portal Section](smaadhaan_web/)
+- Head Over to [Smaadhaan Server Section](https://github.com/naveen8801/Smaadhaan/tree/server)
+- Head Over to [Smaadhaan Android App Section](https://github.com/naveen8801/Smaadhaan/tree/Smaadhann_app)
+- Head Over to [Smaadhaan Web Portal Section](https://github.com/naveen8801/Smaadhaan/tree/smaadhaan_web)
