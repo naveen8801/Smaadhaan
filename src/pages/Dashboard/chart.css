@@ -1,0 +1,45 @@
+.main_div_pie_chart {
+  width: 300px;
+  margin: 2rem;
+  padding: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.main_div_line_chart {
+  width: 600px;
+  margin: 2rem;
+  padding: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.PieChart {
+  height: 40%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.LineChart {
+  margin-left: 5%;
+  height: 40%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.chart-heading {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #002884;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+}
