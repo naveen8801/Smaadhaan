@@ -22,7 +22,7 @@
 - Our solution also involves the **Smaadhaan Web Portal** where Helping Hands can get registered themselves & accept help requests sent by users and provide them with required help. It also involves an interactive public **Smaadhaan Dashbaord** & **Smaadhaan Chatbot** with help of which anyone can access different details in form of various visualizations which involves charts and graphs.
 - Our public dashboard can also help government to have information about different problem faced by different people around the country.
 
-<p align="center">Click Here <a href="">**For Detailed Solution** </a></p>
+<p align="center">Click Here <a href="https://drive.google.com/file/d/1Vl2-QBSNq2CIfvjcxcKGUjRsp2UIb71r/view">**For Detailed Solution** </a></p>
 
 ### IBM SERVICES USED IN THE PROJECT
 
