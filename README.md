@@ -8,13 +8,13 @@
 	  </a>
 </p>
 
-###PROBLEM DESCRIPTION
+### PROBLEM DESCRIPTION
 
 - Approximately 9 percent of the global population is suffering from hunger. Many people around the world are too poor to either buy food or to access the resources they need to grow, harvest and store their food. This is the primary reason why world hunger is still a problem. Poverty and hunger then form a vicious cycle. People who can not afford food become undernourished. Then they cannot even work to earn or produce food.
 - World hunger is still a problem due to the high rates of food waste. Food waste commonly occurs when restaurants and people at home throw out food. Often, distributors and retailers reject fruits and vegetables that have blemishes or spots. Apart from this many social functions also involve food waste, as extra food is produced for peoples and less no. of people came to attend it.
 - If we keep hunger issues aside, then many people are not able to afford basic needs like water, electricity & clothings. As we know that all these are required for proper & better life so all these are interlinked with each other, so lack of one also affects others.
 
-###OUR SOLUTION
+### OUR SOLUTION
 
 - As we know that there is no lack of **Helping Hands** in the world. Those all are always ready to help the needy people but what they lack is a platform which links them with the people in need.
 - We are proposing a platform which connects so called **Helping Hands** with the people who need help regarding basic necessities of life which includes Food, Clothings, Water etc.
@@ -24,15 +24,15 @@
 
 <p align="center">Click Here <a href="">**For Detailed Solution** </a></p>
 
-###IBM SERVICES USED IN THE PROJECT
+### IBM SERVICES USED IN THE PROJECT
 
 - **IBM Cloud Foundry** - IBM cloud foundry service is used to deploy our express server written in nodeJS.
 - **IBM Watson Studio** - IBM watson studio is used to create Smaadhaan chatbot.
 
-###PROJECT PIPELINE
+### PROJECT PIPELINE
 ![PIPELINE](https://raw.githubusercontent.com/naveen8801/Smaadhaan/main/utils/New_Smaadhaan_diagram_jpeg.jpg)
 
-###PROJECT DEMO VIDEO
+### PROJECT DEMO VIDEO
 [![Watch the video]()
 
 ## SUBSECTIONS OF THE APPLICATION
